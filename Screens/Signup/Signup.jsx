@@ -2,7 +2,6 @@ import { Button, StyleSheet, Text, View, Image, TextInput, TouchableOpacity, Scr
 import { styles } from './Signup_Style';
 import LinearGradient from 'react-native-linear-gradient';
 //import {NavigationContainer} from '@react-navigation/native';
-import { Actions } from 'react-native-router-flux';
 
 export default function Signup() {
     return (

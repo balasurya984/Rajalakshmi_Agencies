@@ -2,16 +2,25 @@ import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import Login from './Screens/Login/Login';
 import Signup from './Screens/Signup/Signup';
-import Routes from './Routes';
-import React, { Component } from 'react';
-import { AppRegistry } from 'react-native';
+
 
 export default function App() {
   return (
-
-     <Routes />  
-  
+    <>
+    <View>
+      {/* <Login /> */}
+      <Signup />
+    </View><View style={styles.container}>
+        {/* <StatusBar style="auto" /> */}
+      </View></>
   );
 }
 
-AppRegistry.registerComponent('R', () => App)
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

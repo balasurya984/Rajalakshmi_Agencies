@@ -2,13 +2,9 @@ import { Button, StyleSheet, Text, View, Image, TextInput, TouchableOpacity } fr
 import { styles } from './Style';
 import LinearGradient from 'react-native-linear-gradient';
 //import {NavigationContainer} from '@react-navigation/native';
-import { Actions } from 'react-native-router-flux';
 
 export default function Login()
 {
-    const goToSignup = () => {
-        Actions.signup()
-     }
     return(
       //  <LinearGradient colors={['#4c669f', '#3b5998', '#192f6a']} style={styles.linearGradient}>
         <>
@@ -37,7 +33,7 @@ export default function Login()
                 <TouchableOpacity style={styles.log}>
                     <Text style={styles.logbtn}>Login</Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress = {goToSignup}>
+                <TouchableOpacity>
                     <Text style={styles.forget}>Sign Up</Text>
                 </TouchableOpacity>
 
